@@ -1,5 +1,11 @@
 This is to demonstrate a versioning error.
 
+Steps to replicate:
+
+1. Clone repo
+2. Install dependencies (`npm install`)
+3. Run prebuild (`npm run prebuild:tv`)
+
 I get this error when I try to `npm run ios:device` (when I remove the lines in app.json setting tvos versions--when I have the tvos versions set in the app.json, I get a giant error output):
 
 ```

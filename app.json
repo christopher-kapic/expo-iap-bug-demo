@@ -15,21 +15,13 @@
             "topShelfWide": "./assets/tv_icons/icon-2320x720.png",
             "topShelfWide2x": "./assets/tv_icons/icon-4640x1440.png"
           },
-          "tvosDeploymentTarget": "16.0"
         }
       ],
       "expo-router",
       "expo-font",
       [
         "expo-build-properties",
-        {
-          "ios": {
-            "deploymentTarget": "16.0"
-          },
-          "tvos": {
-            "deploymentTarget": "16.0"
-          }
-        }
+        {}
       ],
       "expo-web-browser",
       "expo-iap"
