@@ -6,6 +6,20 @@ Steps to replicate:
 2. Install dependencies (`npm install`)
 3. Run prebuild (`npm run prebuild:tv`)
 
+You'll then see this error:
+```
+⚠️  Something went wrong running `pod install` in the `ios` directory.
+Command `pod install` failed.
+└─ Cause: CocoaPods could not find compatible versions for pod "openiap":
+  In Podfile:
+    ExpoIap (from `../node_modules/expo-iap/ios`) was resolved to 3.1.36, which depends on
+      openiap (~> 1.2.39)
+
+Specs satisfying the `openiap (~> 1.2.39)` dependency were found, but they required a higher minimum deployment target.
+
+pod install --repo-update --ansi exited with non-zero code: 1
+```
+
 I get this error when I try to `npm run ios:device` (when I remove the lines in app.json setting tvos versions--when I have the tvos versions set in the app.json, I get a giant error output):
 
 ```
