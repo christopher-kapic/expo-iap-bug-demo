@@ -20,18 +20,21 @@
       "expo-router",
       "expo-font",
       "expo-build-properties",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-iap"
     ],
     "android": {
       "edgeToEdgeEnabled": true,
       "splash": {
         "image": "./assets/images/splash.png"
-      }
+      },
+      "package": "com.christopher.MyTVProject"
     },
     "ios": {
       "splash": {
         "image": "./assets/images/splash.png"
-      }
+      },
+      "bundleIdentifier": "com.christopher.MyTVProject",
     },
     "web": {
       "bundler": "metro",
